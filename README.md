@@ -2,7 +2,7 @@
 
 ## Mục đích project
 
-Frontend tĩnh để thu thập ý kiến của Bác sĩ và đội ngũ chuyên môn về hệ thống IRIS. Project hiện chỉ chạy ở trình duyệt: dữ liệu được lưu tạm vào `localStorage` để tránh mất nội dung, được ghi ra Console khi submit và chưa gửi đến backend, Google Drive, Google Sheets hoặc API nào.
+Frontend tĩnh để thu thập ý kiến của Bác sĩ và đội ngũ chuyên môn về hệ thống IRIS. Dữ liệu được lưu tạm vào `localStorage` để tránh mất nội dung và được gửi trực tiếp tới Google Apps Script khi submit. Project không sử dụng Google Drive, Google Sheets, database, API key hoặc credential trong frontend.
 
 ## Cấu trúc project
 
@@ -21,7 +21,9 @@ customer-form/
 1. Mở trực tiếp `D:\IRIS_chua_doi_ten\index.html` bằng trình duyệt; hoặc
 2. Mở thư mục project bằng VS Code và chạy bằng extension **Live Server**.
 
-Sau khi nhấn **GỬI THÔNG TIN**, mở Developer Tools (`F12`) và xem tab **Console** để kiểm tra object dữ liệu. Form không thực hiện `fetch` hoặc gửi dữ liệu ra ngoài.
+Sau khi nhấn **GỬI THÔNG TIN**, mở Developer Tools (`F12`) và xem tab **Console** để kiểm tra object dữ liệu. Form POST payload tới Google Apps Script bằng `fetch` với `mode: "no-cors"`, nên frontend không đọc response JSON từ endpoint. Draft chỉ bị xóa sau khi request hoàn thành mà không phát sinh lỗi JavaScript/network.
+
+Endpoint được khai báo trong `script.js` tại hằng số `API_URL`. Không hard-code email người nhận trong frontend; Google Apps Script chịu trách nhiệm xử lý và gửi email.
 
 ## Cấu trúc dữ liệu survey
 

@@ -1,3 +1,5 @@
+const API_URL =
+  'https://script.google.com/macros/s/AKfycbzSm0TQ9dsVmmO0FqhK98CwcU8b0iaIQTTtQZcmm5b0Wne8y2u2rOFz0nO8Lcc82xlfAA/exec';
 const DRAFT_STORAGE_KEY = 'iris-survey-draft';
 const AUTOSAVE_DELAY = 400;
 
@@ -7,6 +9,7 @@ const purposeContainer = document.getElementById('survey-purpose');
 const sectionsContainer = document.getElementById('survey-sections');
 const formMessage = document.getElementById('form-message');
 const clearDraftButton = document.getElementById('clear-draft-button');
+const submitButton = customerForm.querySelector('.submit-button');
 const progressLabel = document.getElementById('progress-label');
 const progressBar = document.getElementById('progress-bar');
 let saveTimer;
@@ -168,6 +171,7 @@ function restoreDraft() {
     });
   } catch (error) {
     console.warn('Không thể khôi phục bản nháp khảo sát:', error);
+    window.clearTimeout(saveTimer);
     window.localStorage.removeItem(DRAFT_STORAGE_KEY);
   }
 }
@@ -227,7 +231,7 @@ function updateProgress() {
   progressBar.style.width = `${(sectionNumber / surveySections.length) * 100}%`;
 }
 
-customerForm.addEventListener('submit', (event) => {
+customerForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (!nameField.value.trim()) {
     showMessage('Vui lòng nhập họ và tên.', 'error');
@@ -237,7 +241,28 @@ customerForm.addEventListener('submit', (event) => {
 
   const formData = collectFormData();
   console.log('Dữ liệu khảo sát IRIS:', formData);
-  showMessage('Thông tin đã được ghi nhận.', 'success');
+  submitButton.disabled = true;
+  submitButton.textContent = 'ĐANG GỬI...';
+
+  try {
+    await fetch(API_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    window.localStorage.removeItem(DRAFT_STORAGE_KEY);
+    showMessage('Thông tin đã được gửi thành công.', 'success');
+  } catch (error) {
+    console.error(error);
+    showMessage('Không thể gửi thông tin. Vui lòng kiểm tra kết nối và thử lại.', 'error');
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = 'GỬI THÔNG TIN';
+  }
 });
 
 nameField.addEventListener('input', scheduleSave);
