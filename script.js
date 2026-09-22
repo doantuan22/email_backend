@@ -1,6 +1,6 @@
 const API_URL =
   'https://script.google.com/macros/s/AKfycbzSm0TQ9dsVmmO0FqhK98CwcU8b0iaIQTTtQZcmm5b0Wne8y2u2rOFz0nO8Lcc82xlfAA/exec';
-const DRAFT_STORAGE_KEY = 'iris-survey-draft';
+const DRAFT_STORAGE_KEY = 'aster-survey-draft';
 const AUTOSAVE_DELAY = 400;
 
 const customerForm = document.getElementById('customer-form');
@@ -240,7 +240,7 @@ customerForm.addEventListener('submit', async (event) => {
   }
 
   const formData = collectFormData();
-  console.log('Dữ liệu khảo sát IRIS:', formData);
+  console.log('Dữ liệu khảo sát ASTER:', formData);
   submitButton.disabled = true;
   submitButton.textContent = 'ĐANG GỬI...';
 

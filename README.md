@@ -1,8 +1,8 @@
-# Khảo sát chuyên môn hệ thống IRIS
+# Khảo sát chuyên môn hệ thống ASTER
 
 ## Mục đích project
 
-Frontend tĩnh để thu thập ý kiến của Bác sĩ và đội ngũ chuyên môn về hệ thống IRIS. Dữ liệu được lưu tạm vào `localStorage` để tránh mất nội dung và được gửi trực tiếp tới Google Apps Script khi submit. Project không sử dụng Google Drive, Google Sheets, database, API key hoặc credential trong frontend.
+Frontend tĩnh để thu thập ý kiến của Bác sĩ và đội ngũ chuyên môn về hệ thống ASTER. Dữ liệu được lưu tạm vào `localStorage` để tránh mất nội dung và được gửi trực tiếp tới Google Apps Script khi submit. Project không sử dụng Google Drive, Google Sheets, database, API key hoặc credential trong frontend.
 
 ## Cấu trúc project
 
@@ -18,7 +18,7 @@ customer-form/
 
 ## Cách chạy
 
-1. Mở trực tiếp `D:\IRIS_chua_doi_ten\index.html` bằng trình duyệt; hoặc
+1. Mở trực tiếp `index.html` bằng trình duyệt; hoặc
 2. Mở thư mục project bằng VS Code và chạy bằng extension **Live Server**.
 
 Sau khi nhấn **GỬI THÔNG TIN**, mở Developer Tools (`F12`) và xem tab **Console** để kiểm tra object dữ liệu. Form POST payload tới Google Apps Script bằng `fetch` với `mode: "no-cors"`, nên frontend không đọc response JSON từ endpoint. Draft chỉ bị xóa sau khi request hoàn thành mà không phát sinh lỗi JavaScript/network.
@@ -69,7 +69,7 @@ Chỉnh sửa dữ liệu trong `questions.js`. Có thể thêm, xóa hoặc s�
 
 ## Bản nháp trên trình duyệt
 
-- Tên và các textarea được tự động lưu định kỳ vào localStorage với key `iris-survey-draft`.
+- Tên và các textarea được tự động lưu định kỳ vào localStorage với key `aster-survey-draft`.
 - Reload trang sẽ khôi phục nội dung đã nhập.
 - Nút **XÓA NỘI DUNG ĐÃ NHẬP** yêu cầu xác nhận trước khi xóa draft.
 

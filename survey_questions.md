@@ -1,15 +1,15 @@
-# BỘ CÂU HỎI KHẢO SÁT CHUYÊN MÔN VÀ NHU CẦU NÂNG CẤP HỆ THỐNG IRIS
+# BỘ CÂU HỎI KHẢO SÁT CHUYÊN MÔN VÀ NHU CẦU NÂNG CẤP HỆ THỐNG ASTER
 
 ## Mục đích khảo sát
 
-Bộ câu hỏi này được xây dựng nhằm thu thập ý kiến từ Bác sĩ và đội ngũ chuyên môn về hệ thống IRIS, bao gồm:
+Bộ câu hỏi này được xây dựng nhằm thu thập ý kiến từ Bác sĩ và đội ngũ chuyên môn về hệ thống ASTER, bao gồm:
 
 * Đánh giá các chức năng hiện tại của ứng dụng.
 * Đánh giá hướng phát triển và phạm vi sử dụng AI.
 * Xác định các chức năng quản lý, kiểm duyệt và can thiệp chuyên môn cần bổ sung trong tương lai.
 * Xác định những nội dung cần được đội ngũ chuyên môn kiểm soát nhằm bảo đảm tính chính xác của thông tin hiển thị trên ứng dụng.
 
-Ý kiến của Anh/Chị sẽ được sử dụng làm cơ sở để xây dựng các phiên bản tiếp theo của IRIS theo hướng hoàn thiện hơn về chuyên môn, khả năng quản lý và khả năng vận hành thực tế.
+Ý kiến của Anh/Chị sẽ được sử dụng làm cơ sở để xây dựng các phiên bản tiếp theo của ASTER theo hướng hoàn thiện hơn về chuyên môn, khả năng quản lý và khả năng vận hành thực tế.
 
 ---
 
@@ -181,7 +181,7 @@ Sau mỗi nhóm câu hỏi có phần **Ghi chú/Góp ý** để Anh/Chị mô t
 
 ## 9. Vai trò của AI trong hệ thống
 
-### 9.1. Theo Anh/Chị, AI nên đóng vai trò nào trong IRIS?
+### 9.1. Theo Anh/Chị, AI nên đóng vai trò nào trong ASTER?
 
 Có thể lựa chọn nhiều nội dung:
 
@@ -610,7 +610,7 @@ Anh/Chị vui lòng mô tả càng cụ thể càng tốt các chức năng mà 
 
 ## 29. Chức năng mới mà đội ngũ chuyên môn mong muốn
 
-### 29.1. Ngoài những chức năng đã có, Anh/Chị muốn IRIS bổ sung thêm những chức năng nào để hỗ trợ công việc chuyên môn?
+### 29.1. Ngoài những chức năng đã có, Anh/Chị muốn ASTER bổ sung thêm những chức năng nào để hỗ trợ công việc chuyên môn?
 
 ....................................................................................................
 
@@ -622,7 +622,7 @@ Anh/Chị vui lòng mô tả càng cụ thể càng tốt các chức năng mà 
 
 ....................................................................................................
 
-### 29.3. Có chức năng nào mà Anh/Chị đã từng sử dụng ở một hệ thống khác và mong muốn IRIS có chức năng tương tự hay không?
+### 29.3. Có chức năng nào mà Anh/Chị đã từng sử dụng ở một hệ thống khác và mong muốn ASTER có chức năng tương tự hay không?
 
 ....................................................................................................
 
@@ -644,7 +644,7 @@ Anh/Chị vui lòng mô tả càng cụ thể càng tốt các chức năng mà 
 
 5. ..................................................................................................
 
-### 30.2. Theo Anh/Chị, chức năng nào là bắt buộc phải có trước khi IRIS có thể được sử dụng chính thức trong thực tế?
+### 30.2. Theo Anh/Chị, chức năng nào là bắt buộc phải có trước khi ASTER có thể được sử dụng chính thức trong thực tế?
 
 ....................................................................................................
 
@@ -656,7 +656,7 @@ Anh/Chị vui lòng mô tả càng cụ thể càng tốt các chức năng mà 
 
 ## 31. Định hướng phát triển tổng thể
 
-### 31.1. Anh/Chị mong muốn IRIS hỗ trợ đội ngũ chuyên môn ở mức độ nào trong tương lai?
+### 31.1. Anh/Chị mong muốn ASTER hỗ trợ đội ngũ chuyên môn ở mức độ nào trong tương lai?
 
 ....................................................................................................
 
@@ -668,13 +668,13 @@ Anh/Chị vui lòng mô tả càng cụ thể càng tốt các chức năng mà 
 
 ....................................................................................................
 
-### 31.3. Anh/Chị mong muốn IRIS trở thành một sản phẩm như thế nào trong khoảng 2–3 năm tới?
+### 31.3. Anh/Chị mong muốn ASTER trở thành một sản phẩm như thế nào trong khoảng 2–3 năm tới?
 
 ....................................................................................................
 
 ....................................................................................................
 
-### 31.4. Anh/Chị có thêm đề xuất nào về chức năng, quy trình vận hành, nội dung chuyên môn hoặc định hướng phát triển của IRIS hay không?
+### 31.4. Anh/Chị có thêm đề xuất nào về chức năng, quy trình vận hành, nội dung chuyên môn hoặc định hướng phát triển của ASTER hay không?
 
 ....................................................................................................
 

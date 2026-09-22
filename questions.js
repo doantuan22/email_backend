@@ -1,11 +1,11 @@
 // Generated from survey_questions.md. Keep survey text synchronized with that source file.
 const surveyPurpose = [
-  "Bộ câu hỏi này được xây dựng nhằm thu thập ý kiến từ Bác sĩ và đội ngũ chuyên môn về hệ thống IRIS, bao gồm:",
+  "Bộ câu hỏi này được xây dựng nhằm thu thập ý kiến từ Bác sĩ và đội ngũ chuyên môn về hệ thống ASTER, bao gồm:",
   "Đánh giá các chức năng hiện tại của ứng dụng.",
   "Đánh giá hướng phát triển và phạm vi sử dụng AI.",
   "Xác định các chức năng quản lý, kiểm duyệt và can thiệp chuyên môn cần bổ sung trong tương lai.",
   "Xác định những nội dung cần được đội ngũ chuyên môn kiểm soát nhằm bảo đảm tính chính xác của thông tin hiển thị trên ứng dụng.",
-  "Ý kiến của Anh/Chị sẽ được sử dụng làm cơ sở để xây dựng các phiên bản tiếp theo của IRIS theo hướng hoàn thiện hơn về chuyên môn, khả năng quản lý và khả năng vận hành thực tế."
+  "Ý kiến của Anh/Chị sẽ được sử dụng làm cơ sở để xây dựng các phiên bản tiếp theo của ASTER theo hướng hoàn thiện hơn về chuyên môn, khả năng quản lý và khả năng vận hành thực tế."
 ];
 
 const surveySections = [
@@ -244,7 +244,7 @@ const surveySections = [
         "questions": [
           {
             "id": "9.1",
-            "text": "Theo Anh/Chị, AI nên đóng vai trò nào trong IRIS?",
+            "text": "Theo Anh/Chị, AI nên đóng vai trò nào trong ASTER?",
             "content": [
               "Có thể lựa chọn nhiều nội dung:"
             ],
@@ -770,7 +770,7 @@ const surveySections = [
         "questions": [
           {
             "id": "29.1",
-            "text": "Ngoài những chức năng đã có, Anh/Chị muốn IRIS bổ sung thêm những chức năng nào để hỗ trợ công việc chuyên môn?"
+            "text": "Ngoài những chức năng đã có, Anh/Chị muốn ASTER bổ sung thêm những chức năng nào để hỗ trợ công việc chuyên môn?"
           },
           {
             "id": "29.2",
@@ -778,7 +778,7 @@ const surveySections = [
           },
           {
             "id": "29.3",
-            "text": "Có chức năng nào mà Anh/Chị đã từng sử dụng ở một hệ thống khác và mong muốn IRIS có chức năng tương tự hay không?"
+            "text": "Có chức năng nào mà Anh/Chị đã từng sử dụng ở một hệ thống khác và mong muốn ASTER có chức năng tương tự hay không?"
           }
         ]
       },
@@ -793,7 +793,7 @@ const surveySections = [
           },
           {
             "id": "30.2",
-            "text": "Theo Anh/Chị, chức năng nào là bắt buộc phải có trước khi IRIS có thể được sử dụng chính thức trong thực tế?"
+            "text": "Theo Anh/Chị, chức năng nào là bắt buộc phải có trước khi ASTER có thể được sử dụng chính thức trong thực tế?"
           },
           {
             "id": "30.3",
@@ -808,7 +808,7 @@ const surveySections = [
         "questions": [
           {
             "id": "31.1",
-            "text": "Anh/Chị mong muốn IRIS hỗ trợ đội ngũ chuyên môn ở mức độ nào trong tương lai?"
+            "text": "Anh/Chị mong muốn ASTER hỗ trợ đội ngũ chuyên môn ở mức độ nào trong tương lai?"
           },
           {
             "id": "31.2",
@@ -816,11 +816,11 @@ const surveySections = [
           },
           {
             "id": "31.3",
-            "text": "Anh/Chị mong muốn IRIS trở thành một sản phẩm như thế nào trong khoảng 2–3 năm tới?"
+            "text": "Anh/Chị mong muốn ASTER trở thành một sản phẩm như thế nào trong khoảng 2–3 năm tới?"
           },
           {
             "id": "31.4",
-            "text": "Anh/Chị có thêm đề xuất nào về chức năng, quy trình vận hành, nội dung chuyên môn hoặc định hướng phát triển của IRIS hay không?"
+            "text": "Anh/Chị có thêm đề xuất nào về chức năng, quy trình vận hành, nội dung chuyên môn hoặc định hướng phát triển của ASTER hay không?"
           }
         ]
       }
